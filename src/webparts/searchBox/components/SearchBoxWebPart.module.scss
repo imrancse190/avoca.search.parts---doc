@@ -1,0 +1,100 @@
+.searchBox {
+  position: absolute;
+  margin: 8px 44px 8px 90px;
+
+  .errorMessage {
+    margin-bottom: 10px;
+  }
+
+  *::-ms-clear {
+    display: none;
+  }
+
+  .suggestionItem {
+    padding: 10px;
+  }
+
+  .searchFieldContainer {
+    min-width: 468px;
+
+    .searchTitle {
+      text-align: center;
+      color: white;
+      font-size: 30px;
+      margin: 8px;
+    }
+
+    .searchFieldGroup {
+
+      display: flex;
+      position: relative;
+
+      .searchTextField {
+        width: 100%;
+
+        div:first-child > div:first-child {
+          border-radius: 4px;
+          border: 2px solid whitesmoke;
+        }
+      }
+
+      .searchBtn {
+        position: absolute;
+        right: 0;
+
+        [class^=ms-Button] {
+          border: none!important;
+          color: #0063AE!important;
+        }
+      }
+      
+      .clearBtn {
+        position: absolute;
+        right: 32px;
+
+        [class^=ms-Button] {
+          border: none!important;
+          color: #0063AE!important;
+        }
+      }
+    }
+  }
+
+  .suggestionPanel {
+    position: absolute;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 1;
+    background-color: #ffffff;
+    border-bottom: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+
+  .selected {
+    color: #ffffff;
+    background-color: '[theme:themeDarker, default:#0078d7]';
+  }
+}
+
+.parentStackingCtx {
+  position: relative;
+  z-index: 1;
+}
+
+[class^="CanvasZoneContainer"]:first-of-type {
+  background-image: url('https://theavocagroup.sharepoint.com/Sites/KCPages/SiteAssets/images/welcome1.png');
+  background-size: auto;
+  background-position: center;
+  max-height: 189px;
+  min-height: 189px;
+}
+
+[class^="ControlZone--position"]:first-of-type {
+  background-color: transparent !important;
+}
+
+[class^="simpleFooterContainer"] {
+  background-color: #232B6B !important;
+}

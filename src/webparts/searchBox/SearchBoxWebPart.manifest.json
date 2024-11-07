@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
+  "id": "096b96cc-8a44-41fa-9b4d-c0ab2ab2a77a",
+  "alias": "SearchBoxWebPart",
+  "componentType": "WebPart",
+  "version": "*",
+  "manifestVersion": 2,
+  "supportsFullBleed": true,
+  "requiresCustomScript": false,
+  "supportedHosts": ["SharePointWebPart"],
+  "loadLegacyFabricCss": true,
+  "preconfiguredEntries": [{
+    "groupId": "5c03119e-3074-46fd-976b-c60198311f71",
+    "group": { 
+      "default": "PnP" 
+    },
+    "title": { 
+      "default": "Avoca Search Box - Non-Prod" , "fr-fr": "Boîte de recherche"
+    },
+    "description": { "default": "Allows users to enter query keywords", "fr-fr": "Permet aux utilisateurs d'entrer des mots clés de recherche." },
+    "officeFabricIconFontName": "Search",
+    "properties": {
+      "defaultQueryKeywords": "",
+      "searchInNewPage": false,
+      "pageUrl": "",
+      "queryPathBehavior": 0,
+      "queryStringParameter": "q",
+      "openBehavior": 0,
+      "enableQuerySuggestions": false,
+      "useDynamicDataSource": false,
+      "NlpServiceUrl": "",
+      "enableNlpService": false,
+      "enableDebugMode": false,
+      "isStaging": true,
+      "placeholderText": "",
+      "searchboxtitleText":"",
+      "defaultSearchBoxIdentifier": "sbcId"
+    }
+  }]
+}
